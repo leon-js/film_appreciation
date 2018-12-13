@@ -51,7 +51,7 @@ header{
 	position: absolute;
 	max-width: 1024px;
 	width: 100%;
-	top: 7px;
+	top: 11px;
 	left: 50%;
 	-webkit-transform: translateX(-50%); /*x轴，向左平移50%*/
 	transform: translateX(-50%);
@@ -66,9 +66,44 @@ header{
 	-webkit-box-align: center; 	/*均等地分割多余的空间，一半位于子元素之上，另一半位于子元素之下。*/
 	-ms-flex-align: center;
 	align-items: center; /*元素位于容器的中心。*/
+}
 
+.head_title, .head_title a{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
 
+a:-webkit-any-link{
+	color: -webkit-link;
+	cursor: pointer;
+}
 
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.head_title a{
+	color: #fff;
+}
+
+img{
+	max-width: 100%;
+}
+
+.head_title a img{
+	width: 15px;
+	height: 15px;
+	margin-right: .5rem;
+	vertical-align: middle; /*把此元素放置在父元素的中部*/
+}
+
+.head_title_two{
+	margin-left: .5rem; 
 }
 
 
